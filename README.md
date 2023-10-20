@@ -40,4 +40,5 @@ Langkah-langkah untuk menjalankan kode program website visualisasi data gempa bu
 9. Website visualisasi data gempa bumi sekarang harus berjalan, dan Anda dapat mulai menjelajahi data gempa bumi, melakukan pencarian, dan memanfaatkan fitur lainnya.
 
 ## Result
+Berikut adalah hasil hampilan website jika dijalankan
 ![Teks Alternatif](assets/img/result.png)
