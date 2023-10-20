@@ -38,3 +38,6 @@ Langkah-langkah untuk menjalankan kode program website visualisasi data gempa bu
 7. Konfigurasi koneksi database dengan mengedit file konfigurasi, biasanya "config.php" atau sejenisnya. Pastikan untuk memasukkan detail database yang telah Anda buat.
 8. Buka browser web dan akses alamat lokal yang sesuai dengan proyek Anda (biasanya "http://localhost/nama-proyek").
 9. Website visualisasi data gempa bumi sekarang harus berjalan, dan Anda dapat mulai menjelajahi data gempa bumi, melakukan pencarian, dan memanfaatkan fitur lainnya.
+
+## Result
+![Tampilan Web](assets/img/Screenshot (32).png)
