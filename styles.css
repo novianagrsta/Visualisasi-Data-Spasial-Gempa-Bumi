@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.profile-container {
+    display: grid; /* Use grid instead of flex */
+    grid-template-columns: auto 1fr; /* Logo takes up necessary space, rest is for text */
+    align-items: center;
+    padding: 5px;
+}
+
+.profile-logo img {
+    width: 250px; /* Adjust based on your logo size */
+    margin-left: 10px; /* Space between logo and text */
+}
+
+.profile-text h1 {
+    font-size: 30px;
+    color: #0000CD;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row; /* Mengatur arah kontainer ke horizontal */
+    margin: 10px;
+    height: 100vh;
+}
+
+#map-area {
+    width: 65%; 
+    position: relative;
+    flex: 1 1 auto;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-right: 10px; 
+    order: 1; 
+    height: 100%;
+    overflow: auto;
+ }
+ 
+ #map {
+    position: absolute;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+ }
+
+#search-area {
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    order: 2; /* Set order untuk pencarian agar muncul di sebelah kiri */
+    overflow: auto; /* added */
+}
+
+
+#search-form {
+    width: 60%;
+    display: flex;
+    flex-direction: row; /* Display search form and filter on the same row */
+    align-items: center; /* Vertically align items in the search form */
+    justify-content: space-between; /* Add space between search form and filter */
+    margin-bottom: 10px; /* Add margin-bottom to separate it from the table */
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Add margin to separate input and button */
+    outline: none;
+    flex-grow: 1; /* Allow input to grow and fill available space */
+}
+
+#search-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0000CD;
+    color: #fff;
+    cursor: pointer;
+}
+
+#magnitude-filter {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Push it to the right end of the container */
+}
+
+#magnitude-filter img {
+    width: 24px; /* Adjust the width as needed */
+    height: 24px; /* Adjust the height as needed */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    white-space: nowrap; /* Prevent text wrapping in cells */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflowing text */
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
